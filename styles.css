@@ -1,0 +1,155 @@
+/* #0D121C - dark
+#1B3A23 - green
+#F5F6F6 - light 
+#8b3bb0 - purple
+*/
+
+body{
+    position: absolute;
+    background-color: #000000;
+    background-image: url("/media/bg2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #F5F6F6;
+    margin: 0 auto;
+    padding: 0 20%;
+}
+
+hr{
+    border: 1px solid #8b3bb0d7;
+}
+
+.container{
+    background-color: #000000a1;
+    border: 1px solid #8b3bb0d7;
+    border-radius: 10px;
+    margin: 5% 0;
+    padding: 5%;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-picture{
+    aspect-ratio: 1 / 1;
+    width: 16%;
+    border-radius: 50%;
+    border: 7px inset #8b3bb0;
+    margin: 0 4% 0 1%;
+}
+
+#head-name{
+    color: #8b3bb0;
+    margin: 1% 0;
+}
+
+.intro-paragraph{
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #8b3bb07c;
+    font-style: italic;
+    text-align: justify;
+    margin: 0;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3% 10%;
+    gap: 3%;
+}
+
+.hobbies h2{
+    color: #8b3bb0;
+}
+
+video{
+    border: 7px inset #8b3bb0;
+    height: 15em;
+}
+
+.skills-desc{
+    background-image: url('/media/bg1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table{
+    border-style: groove;
+    border: 1px solid #8b3bb0;
+}
+
+td, th{
+    padding: 2% 3%;
+}
+
+.interaction-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.interaction-form h2{
+    margin: 2% 0;
+}
+
+form{
+    width: 50%;
+    text-align: center;
+}
+
+form *{
+    border-radius: 5px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    border: 1px solid #8b3bb0;
+    background-color: #8b3bb07c;
+    color: #F5F6F6;
+    padding: 1% 2%;
+}
+
+button{
+    border: 1px solid #8b3bb0;
+    background-color: #8b3bb07c;
+    color: #F5F6F6;
+    aspect-ratio: 2.5 / 0.8;
+    width: 30%;
+    cursor: pointer;
+}
+
+
+.cat-walking{
+    position: fixed;
+    bottom: 0;
+    left: -200px;
+    animation: 15s walk linear infinite;
+}
+
+.cat-cute{
+    aspect-ratio: 1 / 1;
+    width: 10%;
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+@keyframes walk {
+      from {
+        left: -200px; 
+      }
+      to {
+        left: 110vw;
+      }
+}
